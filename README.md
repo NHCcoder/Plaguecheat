@@ -1,5 +1,14 @@
-![oasis](https://socialify.git.ci/0zean/oasis/image?font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fwww.nicepng.com%2Fpng%2Ffull%2F176-1762253_circle-water-ocean-blue-wave-aesthetic-overlay-tumblr.png&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto)
+<h1 align="center">
+    <img src="/assets/banner.png" width="450"/>
+</h1>
 
+<div align="center">
+    <img src="https://img.shields.io/github/stars/0zean/oasis?style=for-the-badge&logo=github&color=dfb216"/>
+    <img src="https://img.shields.io/github/issues/0zean/oasis?style=for-the-badge&logo=github&color=3380F5"/>
+    <img src="https://img.shields.io/github/commit-activity/t/0zean/oasis?style=for-the-badge&logo=github&color=fe7d37"/>
+    <img src="https://img.shields.io/github/forks/0zean/oasis?style=for-the-badge&logo=github&color=96ca01
+    "/>
+</div>
 
 A streamlit web-app built using Python for Counter-Strike 2 modification. **For Educational purposes only.**
 
@@ -20,7 +29,15 @@ Once downloaded, place it in the same folder as this repo after cloning.
 git clone https://github.com/0zean/oasis.git
 ```
 
-### 📦 2. Install libraries
+### 2. Create virtual 
+
+Using Anaconda, create a new env:
+
+```bash
+conda create -n oasis python=3.10
+```
+
+### 📦 3. Install libraries
 
 Install `pip` dependencies from `requirements.txt`:
 
@@ -28,7 +45,7 @@ Install `pip` dependencies from `requirements.txt`:
 pip install -r requirements.txt
 ```
 
-### 🚀 3. Run the application
+### 🚀 4. Run the application
 
 To start the streamlit app, have CS2 running and double-click `start.bat`. This will run the offset dumper and start the streamlit server.
 
