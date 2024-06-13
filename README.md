@@ -2,13 +2,19 @@
     <img src="/assets/banner.png" width="450"/>
 </h1>
 
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/0zean/oasis/master/LICENSE" target="_blank">MIT License</a>
+</p>
+
+
 <div align="center">
     <img src="https://img.shields.io/github/stars/0zean/oasis?style=for-the-badge&logo=github&color=dfb216"/>
     <img src="https://img.shields.io/github/issues/0zean/oasis?style=for-the-badge&logo=github&color=3380F5"/>
     <img src="https://img.shields.io/github/commit-activity/t/0zean/oasis?style=for-the-badge&logo=github&color=fe7d37"/>
-    <img src="https://img.shields.io/github/forks/0zean/oasis?style=for-the-badge&logo=github&color=96ca01
-    "/>
+    <img src="https://img.shields.io/github/forks/0zean/oasis?style=for-the-badge&logo=github&color=96ca01"/>
 </div>
+
 
 A streamlit web-app framework for Counter-Strike 2 mods built using Python. **For Educational purposes only.**
 
