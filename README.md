@@ -10,10 +10,10 @@
     "/>
 </div>
 
-A streamlit web-app built using Python for Counter-Strike 2 modification. **For Educational purposes only.**
+A streamlit web-app framework for Counter-Strike 2 mods built using Python. **For Educational purposes only.**
 
 <div align="center">
-<img src="./assets/demo.png" alt="icon"/>
+<img src="/assets/demo.png" alt="icon"/>
 </div>
 
 # Setup
@@ -29,7 +29,7 @@ Once downloaded, place it in the same folder as this repo after cloning.
 git clone https://github.com/0zean/oasis.git
 ```
 
-### 2. Create virtual 
+### 🛠️ 2. Create virtual 
 
 Using Anaconda, create a new env:
 
@@ -50,3 +50,9 @@ pip install -r requirements.txt
 To start the streamlit app, have CS2 running and double-click `start.bat`. This will run the offset dumper and start the streamlit server.
 
 The web app will compile and then start running at `http://localhost:8501` which will be automatically copied to the clipboard.
+
+The web app can also be accessed through your phone if you create an exception for port `8501` in your firewall Inbound Rules.
+
+### ⚠️ Warning
+
+Cheating in Counter-Strike 2 is not condoned and there is no guarentee this app won't result in a ban. This project is intended for educational purposes showcasing read-only memory applications. **Use at your own risk!**
