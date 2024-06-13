@@ -1,30 +1,23 @@
-# <img src="./assets/dark.ico#gh-dark-mode-only" alt="Dark Mode Logo" width="30" height="30"> <img src="./assets/favicon.ico#gh-light-mode-only" alt="Light Mode Logo" width="30" height="30"> mpathy.ai POC
+![oasis](https://socialify.git.ci/0zean/oasis/image?font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fwww.nicepng.com%2Fpng%2Ffull%2F176-1762253_circle-water-ocean-blue-wave-aesthetic-overlay-tumblr.png&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto)
 
 
-
-
-An initial POC of open-source LLMs using Ollama for local use and live sentiment analysis in chats.
+A streamlit web-app built using Python for Counter-Strike 2 modification. **For Educational purposes only.**
 
 <div align="center">
-<img src="./assets/demo.gif" alt="icon"/>
+<img src="./assets/demo.png" alt="icon"/>
 </div>
 
 # Setup
 
-You'll need [Ollama](https://ollama.com/) installed and running. This POC is using `llama3` by default but can easily be switched out for other models found [here](https://ollama.com/library).
+You'll need [a2x's cs2-dumper](https://github.com/a2x/cs2-dumper) for updating offsets at launch. You can finde the `cs2-dumper.exe` under releases.
 
-Once installed, you can download a model and run it in the background using this command in your terminal:
+Once downloaded, place it in the same folder as this repo after cloning.
 
-```bash
-ollama run llama3
-```
-
-To try out other models, first download the desired model using the `ollama pull` command and then change the model name in `state.py`.
 
 ### 🧬 1. Clone the Repo
 
 ```bash
-git clone https://github.com/stealth-ai-startup/llm-chat-sentiment-poc.git
+git clone https://github.com/0zean/oasis.git
 ```
 
 ### 📦 2. Install libraries
@@ -37,11 +30,6 @@ pip install -r requirements.txt
 
 ### 🚀 3. Run the application
 
-Initialize and run the app (You'll only need to initialize the first time):
+To start the streamlit app, have CS2 running and double-click `start.bat`. This will run the offset dumper and start the streamlit server.
 
-```bash
-reflex init
-reflex run
-```
-
-The web app will compile and then start running at `http://localhost:3000`
+The web app will compile and then start running at `http://localhost:8501` which will be automatically copied to the clipboard.
