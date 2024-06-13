@@ -42,7 +42,7 @@ keys = [
 ]
 
 # App design + layout
-with open("style.css") as f:
+with open("assets\style.css") as f:
     css = f.read()
 
 # Custom title using CSS file
