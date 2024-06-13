@@ -1,0 +1,5 @@
+keyboard==0.13.5
+pynput==1.7.7
+pywin32==306
+Pymem==1.13.1
+streamlit==1.35.0

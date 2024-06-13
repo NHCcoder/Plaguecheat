@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap"); 
+
+.title-font {
+    font-family: "Nabla", system-ui;
+    font-size: calc(1.4rem + 1.8vw);
+    font-weight: 400;
+    font-variation-settings:
+    "EDPT" 85,
+    "EHLT" 6;
+    color: #091747;
+}
