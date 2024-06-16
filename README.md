@@ -28,6 +28,12 @@ You'll need [a2x's cs2-dumper](https://github.com/a2x/cs2-dumper) for updating o
 
 Once downloaded, place it in the same folder as this repo after cloning.
 
+## 🎚️ Features:
+- [x] RCS
+- [x] Trigger Bot
+- [ ] ESP
+- [ ] Skins
+
 
 ### 🧬 1. Clone the Repo
 
