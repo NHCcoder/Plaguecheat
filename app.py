@@ -8,6 +8,7 @@ import streamlit as st
 
 from functions.rcs import rcs
 from functions.trig import trig
+from functions.esp import esp
 
 st.set_page_config(page_title="OASIS.py",
                    page_icon="🏖️",
@@ -78,14 +79,14 @@ with tab1:
         amt = st.slider("RCS Amount", 0.0, 2.0, 2.0, 0.1, disabled=state.disable_slider)
 
 with tab2:
-    enable_esp = st.toggle("Enable ESP (Working on)", disabled=True)
+    enable_esp = st.toggle("Enable ESP")
     state.enable_esp = enable_esp
 
 
 # Create shared variables to signal the threads to stop
 trigger_stop_flag = threading.Event()
 rcs_stop_flag = threading.Event()
-# esp_stop_flag = threading.Event()
+esp_stop_flag = threading.Event()
 
 
 def run_trigger():
@@ -128,10 +129,10 @@ def on_rcs_change(new_amt):
     state.rcs_thread.start()
             
 
-# def run_esp():
-#     while not esp_stop_flag.is_set():
-#         if enable_esp:
-#             esp(pm, client)
+def run_esp():
+    while not esp_stop_flag.is_set():
+        if enable_esp:
+            esp(pm, client)
 
 
 # Create a session state objects
@@ -151,8 +152,8 @@ if amt != state.amt:
     state.amt = amt
     on_rcs_change(amt)
     
-# if "esp_thread" not in state:
-#     state.esp_thread = None
+if "esp_thread" not in state:
+    state.esp_thread = None
 
 
 # Check if the threads are running and start them if needed 
@@ -164,9 +165,9 @@ if state.rcs_thread is None or not state.rcs_thread.is_alive():
     state.rcs_thread = threading.Thread(target=run_rcs)
     state.rcs_thread.start()
 
-# if state.esp_thread is None or not state.esp_thread.is_alive():
-#     state.esp_thread = threading.Thread(target=run_esp)
-#     state.esp_thread.start()
+if state.esp_thread is None or not state.esp_thread.is_alive():
+    state.esp_thread = threading.Thread(target=run_esp)
+    state.esp_thread.start()
 
 
 # Check if the checkboxes are unchecked and set the stop flags
@@ -189,11 +190,11 @@ if not enable_rcs:
         )
         state.rcs_thread.join()
 
-# if not enable_esp:
-#     esp_stop_flag.set()
-#     if state.esp_thread.is_alive():
-#         ctypes.pythonapi.PyThreadState_SetAsyncExc(
-#             ctypes.c_long(state.esp_thread.ident),
-#             ctypes.py_object(SystemExit)
-#         )
-#         state.esp_thread.join()
+if not enable_esp:
+    esp_stop_flag.set()
+    if state.esp_thread.is_alive():
+        ctypes.pythonapi.PyThreadState_SetAsyncExc(
+            ctypes.c_long(state.esp_thread.ident),
+            ctypes.py_object(SystemExit)
+        )
+        state.esp_thread.join()
