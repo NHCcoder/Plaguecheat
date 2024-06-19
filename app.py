@@ -52,7 +52,7 @@ st.markdown('<h1 class="title-font">OASIS.py 🏖️</h1>', unsafe_allow_html=Tr
 
 ballons = st.balloons()
 
-tab1, tab2, tab3 = st.tabs(["Aim", "ESP", "Skins"])
+tab1, tab2, tab3 = st.tabs(["Aim", "ESP", "Misc"])
 
 with tab1:
     col1, col2 = st.columns(2)
