@@ -31,8 +31,8 @@ Once downloaded, place it in the same folder as this repo after cloning.
 ## 🎚️ Features:
 - [x] RCS
 - [x] Trigger Bot
-- [ ] ESP
-- [ ] Skins
+- [X] ESP
+- [ ] Misc
 
 
 ### 🧬 1. Clone the Repo
