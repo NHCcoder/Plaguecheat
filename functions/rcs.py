@@ -34,35 +34,39 @@ def rcs(pm, client, amt):
             
             else:
                 player = pm.read_longlong(client + offsets.dwLocalPlayerPawn)
-                local = PlayerPawn(pm, player, client, offsets)
                 
-                if local.get_aim_punch_cache() and local.get_view_angle():
+                if player:
+                    local = PlayerPawn(pm, player, client, offsets)
                     
-                    punch_angle = Vec3()
+                    if local.get_aim_punch_cache() and local.get_view_angle():
                         
-                    if local.AimPunchCache.Count <= 0 or local.AimPunchCache.Count > 0xFFFF:
-                        continue
-                    
-                    punch_angle = local.cache_to_punch()
-                
-                    shots_fired = pm.read_int(player + offsets.m_iShotsFired)
-                    
-                    if shots_fired > 1:
+                        punch_angle = Vec3()
+                            
+                        if local.AimPunchCache.Count <= 0 or local.AimPunchCache.Count > 0xFFFF:
+                            continue
+                        
+                        punch_angle = local.cache_to_punch()
+                                            
+                        if local.get_shots_fired() > 1:
 
-                        new_punch = Vec3(punch_angle.x - old_punch.x,
-                                         punch_angle.y - old_punch.y, 0)
-                        
-                        new_angle = Vec3(local.ViewAngle.x - new_punch.x * amt,
-                                         local.ViewAngle.y - new_punch.y * amt, 0)
-                                                
-                        move_mouse(int(((new_angle.y - local.ViewAngle.y) / local.ClientSensitivity) / -0.022),
-                                   int(((new_angle.x - local.ViewAngle.x) / local.ClientSensitivity) / 0.022),
-                                   False)
-                        
-                        old_punch = punch_angle
-                        
-                    else:
-                        old_punch = punch_angle     
+                            new_punch = Vec3(punch_angle.x - old_punch.x,
+                                            punch_angle.y - old_punch.y, 0)
+                            
+                            new_angle = Vec3(local.ViewAngle.x - new_punch.x * amt,
+                                            local.ViewAngle.y - new_punch.y * amt, 0)
+                                                    
+                            move_mouse(int(((new_angle.y - local.ViewAngle.y) / local.ClientSensitivity) / -0.022),
+                                    int(((new_angle.x - local.ViewAngle.x) / local.ClientSensitivity) / 0.022),
+                                    False)
+                            
+                            old_punch = punch_angle
+                            
+                        else:
+                            old_punch = punch_angle
+
+                else:
+                    continue
+                       
         
         except KeyboardInterrupt:
             break
