@@ -47,8 +47,9 @@ with open("assets\style.css") as f:
     css = f.read()
 
 # Custom title using CSS file
-st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
-st.markdown('<h1 class="title-font">OASIS.py 🏖️</h1>', unsafe_allow_html=True)
+st.image('assets/banner.png', width=400)
+#st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+#st.markdown('<h1 class="title-font">OASIS.py 🏖️</h1>', unsafe_allow_html=True)
 
 ballons = st.balloons()
 
