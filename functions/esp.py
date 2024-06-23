@@ -156,6 +156,7 @@ def pre_esp(pm, client, draw_list):
             feetR = w2s(view_matrix, feetR_bone[0], feetR_bone[1], feetR_bone[2], ScreenY, ScreenX)
             feetL = w2s(view_matrix, feetL_bone[0], feetL_bone[1], feetL_bone[2], ScreenY, ScreenX)
 
+            # Skeleton ESP
             draw_list.add_line(cou[0], cou[1], shoulderR[0], shoulderR[1], color, 1)
             draw_list.add_line(cou[0], cou[1], shoulderL[0], shoulderL[1], color, 1)
             draw_list.add_line(brasL[0], brasL[1], shoulderL[0], shoulderL[1], color, 1)
