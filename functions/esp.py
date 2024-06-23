@@ -1,3 +1,5 @@
+import time
+
 import glfw
 import imgui
 import OpenGL.GL as gl
@@ -65,6 +67,7 @@ def pre_esp(pm, client, draw_list):
         local_player_team = pm.read_int(local_player_pawn_addr + offsets.m_iTeamNum)
     except Exception:
         print("You are not in game")
+        time.sleep(7)
         return
 
     for i in range(64):
