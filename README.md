@@ -43,7 +43,7 @@ git clone https://github.com/0zean/oasis.git
 
 ### 🛠️ 2. Create virtual 
 
-Using Anaconda, create a new env:
+Using [Anaconda](https://docs.anaconda.com/miniconda/miniconda-install/), create a new env:
 
 ```bash
 conda create -n oasis python=3.10
