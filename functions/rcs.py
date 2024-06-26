@@ -38,7 +38,7 @@ def rcs(pm, client, amt):
                 if player:
                     local = PlayerPawn(pm, player, client, offsets)
                     
-                    if local.get_aim_punch_cache() and local.get_view_angle():
+                    if local.get_aim_punch_cache() and local.get_view_angle() and local.get_shots_fired():
                         
                         punch_angle = Vec3()
                             
