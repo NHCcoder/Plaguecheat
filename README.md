@@ -38,7 +38,7 @@ Once downloaded, place it in the same folder as this repo after cloning.
 ### 🧬 1. Clone the Repo
 
 ```bash
-git clone https://github.com/0zean/oasis.git
+git clone https://github.com/0zean/quantico.git
 ```
 
 ### 🛠️ 2. Create virtual 
