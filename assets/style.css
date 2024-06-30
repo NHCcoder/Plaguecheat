@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono"); 
 
 .title-font {
-    font-family: "Nabla", system-ui;
+    font-family: "IBM Plex Mono", monospace;
     font-size: calc(1.4rem + 1.8vw);
-    font-weight: 400;
-    font-variation-settings:
-    "EDPT" 85,
-    "EHLT" 6;
-    color: #091747;
+    font-weight: 600;
+    font-style: normal;
+    color: #588cc7;
 }
