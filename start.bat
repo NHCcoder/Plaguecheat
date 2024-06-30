@@ -35,8 +35,8 @@ if %ERRORLEVEL% equ 0 (
 )
 
 REM Navigate to the directory and activate conda environment
-cd "..\oasis"
-call activate oasis
+cd "..\quantico"
+call activate quantico
 
 REM Copy the Local URL to the clipboard
 echo http://localhost:8501 | clip
