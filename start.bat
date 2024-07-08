@@ -35,8 +35,8 @@ if %ERRORLEVEL% equ 0 (
 )
 
 REM Navigate to the directory and activate conda environment
-cd "..\quantico"
-call activate quantico
+cd "..\coral"
+call activate coral
 
 REM Copy the Local URL to the clipboard
 echo http://localhost:8501 | clip
