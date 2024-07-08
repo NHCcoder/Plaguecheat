@@ -46,7 +46,7 @@ git clone https://github.com/0zean/quantico.git
 Using [Anaconda](https://docs.anaconda.com/miniconda/miniconda-install/), create a new env:
 
 ```bash
-conda create -n quantico python=3.10
+conda create -n coral python=3.10
 ```
 
 ### 📦 3. Install libraries
