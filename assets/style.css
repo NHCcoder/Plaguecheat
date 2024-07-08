@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono"); 
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); 
 
 .title-font {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Amatic SC", sans-serif;
     font-size: calc(1.4rem + 1.8vw);
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-    color: #588cc7;
+    color: #ea7070;
 }
