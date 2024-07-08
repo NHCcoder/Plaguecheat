@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/0zean/oasis/master/LICENSE" target="_blank">MIT License</a>
+    <a href="https://raw.githubusercontent.com/0zean/coral/main/LICENSE" target="_blank">MIT License</a>
 </p>
 
 
