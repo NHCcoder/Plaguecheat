@@ -10,8 +10,8 @@ from functions.rcs import rcs
 from functions.trig import trig
 from functions.esp import esp
 
-st.set_page_config(page_title="QUANTICO.py",
-                   page_icon="🚀",
+st.set_page_config(page_title="CORAL.py",
+                   page_icon="🐠",
                    layout="centered",
                    initial_sidebar_state="collapsed")
 state = st.session_state
@@ -27,7 +27,7 @@ try:
     state.msg = st.toast("cs2.exe found! loading...", icon="🎉")
     client = pymem.process.module_from_name(pm.process_handle, "client.dll").lpBaseOfDll
     time.sleep(1)
-    state.msg.toast("Quantico.py loaded", icon="💯")
+    state.msg.toast("coral.py loaded", icon="💯")
 except pymem.exception.ProcessNotFound:
     st.error("cs2.exe not found!", icon="🚨")
 
@@ -48,7 +48,7 @@ with open("assets\style.css") as f:
 
 # Custom title using CSS file
 st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
-st.markdown('<h1 class="title-font">Quant<span style="color:black;">ico</span>🚀</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="title-font">C<span style="color:#fdc4b6;">o</span><span style="color:#e59572;">r</span><span style="color:#2694ab;">a</span><span style="color:#4dbedf;">l</span>🐠</h1>', unsafe_allow_html=True)
 
 ballons = st.balloons()
 
