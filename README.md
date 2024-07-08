@@ -38,7 +38,7 @@ Once downloaded, place it in the same folder as this repo after cloning.
 ### 🧬 1. Clone the Repo
 
 ```bash
-git clone https://github.com/0zean/quantico.git
+git clone https://github.com/0zean/coral.git
 ```
 
 ### 🛠️ 2. Create virtual 
