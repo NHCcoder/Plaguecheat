@@ -34,6 +34,13 @@ if %ERRORLEVEL% equ 0 (
     exit /b 1
 )
 
+:::  ______     ______     ______     ______     __        
+::: /\  ___\   /\  __ \   /\  == \   /\  __ \   /\ \       
+::: \ \ \____  \ \ \/\ \  \ \  __<   \ \  __ \  \ \ \____  
+:::  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\ 
+:::   \/_____/   \/_____/   \/_/ /_/   \/_/\/_/   \/_____/ 
+for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo %%A                                                 
+
 REM Navigate to the directory and activate conda environment
 cd "..\coral"
 call activate coral
