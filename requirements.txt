@@ -3,6 +3,6 @@ pynput==1.7.7
 pywin32==306
 Pymem==1.13.1
 streamlit==1.35.0
-glfw==2.7.0
-imgui==2.0.0
-PyOpenGL==3.1.7
+glfw>=2.7.0
+imgui>=2.0.0
+PyOpenGL>=3.1.7
