@@ -24,12 +24,12 @@ offsets_dict = {
     'm_lifeState': nv.get('C_BaseEntity','m_lifeState'),
     'm_pGameSceneNode': nv.get('C_BaseEntity','m_pGameSceneNode'),
     'm_modelState': nv.get('CSkeletonInstance','m_modelState'),
-    'm_hPlayerPawn': nv.get('CCSPlayerController','m_hPlayerPawn'),
+    'm_hPlayerPawn': 2028, #nv.get('CCSPlayerController','m_hPlayerPawn'),
     'm_iIDEntIndex': nv.get('C_CSPlayerPawnBase', 'm_iIDEntIndex'),
     'm_iTeamNum': nv.get('C_BaseEntity', 'm_iTeamNum'),
     'm_iHealth': nv.get('C_BaseEntity', 'm_iHealth'),
     'm_iszPlayerName': nv.get("CBasePlayerController", "m_iszPlayerName"),
-    'm_pBoneArray': 480
+    'm_pBoneArray': 128
 }
 
 offsets.add_offsets(offsets_dict)
@@ -216,8 +216,8 @@ def pre_esp(pm, client, draw_list):
             # Player Name
             draw_list.add_text(leftX, topY, imgui.get_color_u32_rgba(1,1,0,1), player_name)
 
-        except Exception:
-            print("cant get bones")
+        except Exception as e:
+            print(f"cant get bones: {e}")
             return
 
 
