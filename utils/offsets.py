@@ -11,7 +11,7 @@ class Client:
             exit()
                
         try:
-            with open('output\client.dll.json') as f:
+            with open('output\client_dll.json') as f:
                 self.clientdll = json.load(f)
         except Exception as e:
             print(f"Unable to get client.dll: {e}")
